@@ -1,8 +1,11 @@
 package com.itheima.dao.impl;
 
 import com.itheima.dao.AnimeList;
+import com.itheima.utils.JDBC;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 
 /**
@@ -15,11 +18,18 @@ import java.util.ArrayList;
  */
 @Component
 public class AnimeListImpl implements AnimeList {
+
+
+
+
+
     @Override
     public void printAnimeListInfo() {
-
-
-
-
+        ArrayList<String> animeList = new ArrayList<>();
+        animeList.add("01 影宅");
+        animeList.add("02 Lycoris Recoil");
+        animeList.add("03 契约之吻");
+        animeList.add("04 彻夜之歌");
+        animeList.forEach(System.out::println);
     }
 }
