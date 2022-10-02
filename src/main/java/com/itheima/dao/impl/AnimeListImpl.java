@@ -4,6 +4,7 @@ import com.itheima.dao.AnimeList;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Description ==> TODO
@@ -24,5 +25,20 @@ public class AnimeListImpl implements AnimeList {
         animeList.add("03 契约之吻");
         animeList.add("04 彻夜之歌");
         animeList.forEach(System.out::println);
+    }
+
+    @Override
+    public List<String> getAnimeList() {
+        ArrayList<String> animeList = new ArrayList<>();
+        animeList.add("01 SAO");
+        animeList.add("02 刀剑神域");
+        animeList.add("03 ALO");
+        animeList.add("04 GGO");
+        return animeList;
+    }
+
+    @Override
+    public void sayHello() {
+        System.out.println("扣你吃哇...-_-!!");
     }
 }

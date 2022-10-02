@@ -28,9 +28,9 @@ public class InvokeMethod {
     @Pointcut("execution(public void com.itheima.dao.AnimeList.printAnimeListInfo())")
     public void pt01(){}
 
-    public InvokeMethod() {
-        System.out.println(">>>我是通知对象");
-    }
+//    public InvokeMethod() {
+//        System.out.println(">>>我是通知对象");
+//    }
 
     @Before("pt01()")
     public void DateTimeInvoke(){

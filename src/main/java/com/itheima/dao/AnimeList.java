@@ -1,5 +1,7 @@
 package com.itheima.dao;
 
+import java.util.List;
+
 /**
  * Description ==> TODO
  * BelongsProject ==> spring_basic02
@@ -9,5 +11,11 @@ package com.itheima.dao;
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
 public interface AnimeList {
+
     void printAnimeListInfo();
+
+    List<String> getAnimeList();
+
+    void sayHello();
+
 }
