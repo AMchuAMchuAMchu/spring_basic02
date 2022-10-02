@@ -1,11 +1,8 @@
 package com.itheima.dao.impl;
 
 import com.itheima.dao.AnimeList;
-import com.itheima.utils.JDBC;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.sql.Connection;
 import java.util.ArrayList;
 
 /**
@@ -18,10 +15,6 @@ import java.util.ArrayList;
  */
 @Component
 public class AnimeListImpl implements AnimeList {
-
-
-
-
 
     @Override
     public void printAnimeListInfo() {

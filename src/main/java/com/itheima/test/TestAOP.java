@@ -1,7 +1,10 @@
 package com.itheima.test;
 
-import com.itheima.utils.JDBC;
+import com.itheima.cfg.SpringConfig;
+import com.itheima.dao.AnimeList;
+import com.itheima.dao.impl.AnimeListImpl;
 import org.junit.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.Connection;
 
@@ -15,15 +18,20 @@ import java.sql.Connection;
  */
 public class TestAOP {
 
+    public AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfig.class);
 
 
 
     @Test
-    public void testConnection(){
+    public void test01(){
 
-        Connection connection = JDBC.getConnection();
-        System.out.println(connection);
+        AnimeList bean = ac.getBean(AnimeList.class);
+        bean.printAnimeListInfo();
+        System.out.println(bean);
+        System.out.println(bean.getClass());
+
 
     }
+
 
 }
