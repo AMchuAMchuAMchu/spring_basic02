@@ -40,7 +40,6 @@ public class InvokeMethod {
 
         Object proceed = joinPoint.proceed();
 
-
         LocalDateTime now02 = LocalDateTime.now();
         DateTimeFormatter dateTimeFormatter02 = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
         String format02 = dateTimeFormatter02.format(now02);
