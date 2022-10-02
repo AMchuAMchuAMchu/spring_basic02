@@ -14,7 +14,7 @@ public interface AnimeList {
 
     void printAnimeListInfo();
 
-    List<String> getAnimeList();
+    Object getAnimeList();
 
     void sayHello();
 

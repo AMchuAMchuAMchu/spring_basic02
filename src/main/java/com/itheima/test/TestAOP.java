@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.Connection;
+import java.util.List;
 
 /**
  * Description ==> TODO
@@ -26,8 +27,8 @@ public class TestAOP {
     public void test01(){
 
         AnimeList bean = ac.getBean(AnimeList.class);
-        bean.printAnimeListInfo();
-        bean.sayHello();
+        Object animeList = bean.getAnimeList();//        bean.sayHello();
+        System.out.println(animeList);
 //        System.out.println(bean);
 //        System.out.println(bean.getClass());
 

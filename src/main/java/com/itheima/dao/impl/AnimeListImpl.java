@@ -28,12 +28,14 @@ public class AnimeListImpl implements AnimeList {
     }
 
     @Override
-    public List<String> getAnimeList() {
+    public Object getAnimeList() {
         ArrayList<String> animeList = new ArrayList<>();
         animeList.add("01 SAO");
         animeList.add("02 刀剑神域");
         animeList.add("03 ALO");
         animeList.add("04 GGO");
+        animeList.forEach(System.out::println);
+        int i  = 10/0;
         return animeList;
     }
 
