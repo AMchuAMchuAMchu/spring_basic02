@@ -27,8 +27,9 @@ public class TestAOP {
 
         AnimeList bean = ac.getBean(AnimeList.class);
         bean.printAnimeListInfo();
-        System.out.println(bean);
-        System.out.println(bean.getClass());
+        bean.sayHello();
+//        System.out.println(bean);
+//        System.out.println(bean.getClass());
 
 
     }

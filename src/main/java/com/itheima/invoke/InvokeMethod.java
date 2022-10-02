@@ -25,7 +25,7 @@ public class InvokeMethod {
 //    @Pointcut("execution(public void com.itheima.dao.impl.AnimeListImpl.printAnimeListInfo())")
 //    public void pt01(){}
 
-    @Pointcut("execution(public void com.itheima.dao.AnimeList.printAnimeListInfo())")
+    @Pointcut("execution(* com.itheima.*.*.printAnimeListInfo(..))")
     public void pt01(){}
 
 //    public InvokeMethod() {
