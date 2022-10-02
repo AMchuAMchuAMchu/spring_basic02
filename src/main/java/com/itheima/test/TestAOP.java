@@ -1,5 +1,10 @@
 package com.itheima.test;
 
+import com.itheima.utils.JDBC;
+import org.junit.Test;
+
+import java.sql.Connection;
+
 /**
  * Description ==> TODO
  * BelongsProject ==> spring_basic02
@@ -11,5 +16,14 @@ package com.itheima.test;
 public class TestAOP {
 
 
+
+
+    @Test
+    public void testConnection(){
+
+        Connection connection = JDBC.getConnection();
+        System.out.println(connection);
+
+    }
 
 }
