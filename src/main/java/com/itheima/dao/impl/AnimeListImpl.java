@@ -4,7 +4,6 @@ import com.itheima.dao.AnimeList;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Description ==> TODO
@@ -35,7 +34,7 @@ public class AnimeListImpl implements AnimeList {
         animeList.add("03 ALO");
         animeList.add("04 GGO");
         animeList.forEach(System.out::println);
-        int i  = 10/0;
+//        int i  = 10/0;
         return animeList;
     }
 
