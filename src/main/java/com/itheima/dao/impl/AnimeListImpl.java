@@ -17,8 +17,9 @@ import java.util.ArrayList;
 public class AnimeListImpl implements AnimeList {
     @Override
     public void printAnimeListInfo() {
-        ArrayList<String> animeList = new ArrayList<>();
 
-        animeList.add("");
+
+
+
     }
 }
